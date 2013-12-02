@@ -1,0 +1,23 @@
+.modules .sorting-indicator {
+	display: inline;
+	visibility: hidden;
+}
+
+.modules th.manage-column a:hover .sorting-indicator {
+	visibility: visible;
+}
+
+.modules .column-introduced {
+	text-align: center;
+}
+
+.modules .disabled td,
+.modules .disabled td p,
+.modules .disabled td ol,
+.modules .disabled td ul {
+	color: #999;
+}
+
+.modules .disabled .row-actions {
+	visibility: visible;
+}
