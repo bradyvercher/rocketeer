@@ -78,13 +78,6 @@ class Rocketeer {
 		add_action( 'admin_menu', array( $this, 'admin_menu' ), 1000 );
 		add_filter( 'wp_redirect', array( $this, 'intercept_redirects' ) );
 		add_action( 'rocketeer_notices', array( $this, 'notices' ) );
-
-		// Prevent Jetpack from disconnecting on deactivation.
-		$jetpack_file = JETPACK__PLUGIN_DIR . 'jetpack.php';
-		remove_action( 'deactivate_' . $jetpack_file, array( 'Jetpack', 'plugin_deactivation' ) );
-
-		// Clear the Heartbeat cron task when Jetpack is deactivated.
-		register_deactivation_hook( $jetpack_file, array( $this, 'deactivate_jetpack' ) );
 	}
 
 	/**
@@ -312,19 +305,6 @@ class Rocketeer {
 		}
 
 		return false;
-	}
-
-	/**
-	 * Jetpack deactivation routine.
-	 *
-	 * Clears the Jetpack Heartbeat schedule.
-	 *
-	 * @since 1.0.0
-	 * @see Jetpack::plugin_deactivation()
-	 * @uses Jetpack_Heartbeat::deactivate()
-	 */
-	public function deactivate_jetpack() {
-		Jetpack_Heartbeat::init()->deactivate();
 	}
 }
 
