@@ -122,32 +122,6 @@ class Rocketeer {
 		wp_enqueue_style( 'rocketeer', plugin_dir_url( __FILE__ ) . 'assets/styles/rocketeer.css' );
 		wp_enqueue_script( 'rocketeer', plugin_dir_url( __FILE__ ) . 'assets/scripts/rocketeer.js' );
 		add_action( 'admin_head', array( $this, 'admin_head' ) );
-
-		$install_manual_control = '';
-		if ( current_user_can( 'activate_plugins' ) ) {
-			$url = wp_nonce_url( self_admin_url( 'update.php?action=install-plugin&plugin=manual-control' ), 'install-plugin_manual-control' );
-			$install_manual_control = ' &bull; <a href="' . esc_url( $url ) . '">' . __( 'Install Now', 'rocketeer' ) . '</a>';
-		}
-
-		get_current_screen()->add_help_tab( array(
-			'id'      => 'plugins',
-			'title'   => __( 'Plugins', 'rocketeer' ),
-			'content' =>
-				'<p>' .
-					'<a href="http://wordpress.org/plugins/manual-control/" target="_blank"><strong>' . __( 'Manual Control for Jetpack', 'rocketeer' ) . '</strong></a>' .
-					$install_manual_control .
-					'<br>' .
-					__( 'Jetpack auto-activates new modules, without asking your permission. This plugin stops that.', 'rocketeer' ) .
-				'</p>',
-		) );
-
-		get_current_screen()->set_help_sidebar(
-			'<p><strong>' . __( 'Jetpack Version:', 'rocketeer' ) . '</strong> ' . JETPACK__VERSION . '</p>' .
-			'<p><strong>' . __( 'For more information:', 'rocketeer' ) . '</strong></p>' .
-			'<p><a href="http://jetpack.me/faq/" target="_blank">'     . __( 'Jetpack FAQ', 'rocketeer' ) . '</a></p>' .
-			'<p><a href="http://jetpack.me/support/" target="_blank">' . __( 'Jetpack Support', 'rocketeer' ) . '</a></p>' .
-			'<p><a href="' . Jetpack::admin_url( array( 'page' => 'jetpack-debugger' )  ) .'">' . __( 'Jetpack Debugging Center', 'rocketeer' ) . '</a></p>'
-		);
 	}
 
 	public function admin_head() {
