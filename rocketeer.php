@@ -143,10 +143,10 @@ class Rocketeer {
 
 		get_current_screen()->set_help_sidebar(
 			'<p><strong>' . __( 'Jetpack Version:', 'rocketeer' ) . '</strong> ' . JETPACK__VERSION . '</p>' .
-			'<p><strong>' . __( 'For more information:', 'rocketeer' ) . '</strong></p>' .
-			'<p><a href="http://jetpack.me/faq/" target="_blank">'     . __( 'Jetpack FAQ', 'rocketeer' ) . '</a></p>' .
-			'<p><a href="http://jetpack.me/support/" target="_blank">' . __( 'Jetpack Support', 'rocketeer' ) . '</a></p>' .
-			'<p><a href="' . Jetpack::admin_url( array( 'page' => 'jetpack-debugger' )  ) .'">' . __( 'Jetpack Debugging Center', 'rocketeer' ) . '</a></p>'
+			'<p><strong>' . __( 'For more information:', 'jetpack' ) . '</strong></p>' .
+			'<p><a href="http://jetpack.me/faq/" target="_blank">'     . __( 'Jetpack FAQ', 'jetpack' ) . '</a></p>' .
+			'<p><a href="http://jetpack.me/support/" target="_blank">' . __( 'Jetpack Support', 'jetpack' ) . '</a></p>' .
+			'<p><a href="' . Jetpack::admin_url( array( 'page' => 'jetpack-debugger' )  ) .'">' . __( 'Jetpack Debugging Center', 'jetpack' ) . '</a></p>'
 		);
 	}
 
