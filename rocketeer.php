@@ -12,7 +12,7 @@
  * Plugin Name: Rocketeer
  * Plugin URI: https://github.com/bradyvercher/rocketeer
  * Description: Commandeer your Jetpack, Rocketeer!
- * Version: 1.0.0
+ * Version: 1.0.1
  * Author: Brady Vercher
  * Author URI: http://www.blazersix.com/
  * License: GPL-2.0+
