@@ -106,7 +106,7 @@ class Rocketeer_Modules_List_Table extends WP_List_Table {
 
 		// Show all modules first if Jetpack is connected or isn't in development mode.
 		if ( Jetpack::is_active() || ! Jetpack::is_development_mode() ) {
-			$this->context = 'all';
+			$this->context = ( 'available' == $this->context ) ? 'all' : $this->context;
 			unset( $items['available'] );
 		}
 
