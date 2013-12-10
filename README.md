@@ -13,6 +13,9 @@ The list table format provides a better overview of available modules and the ab
 
 Look for the **Modules** sub-menu under the Jetpack menu item after activating.
 
+![Module List Screenshot](https://raw.github.com/bradyvercher/rocketeer/master/screenshot-1.png)
+_Available modules list with Jetpack in development mode._
+
 ## Installation ##
 
 ### Upload ###

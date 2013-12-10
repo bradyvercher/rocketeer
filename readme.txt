@@ -40,7 +40,7 @@ After activating the plugin, look for the new *Modules* submenu item in the Jetp
 
 == Screenshots ==
 
-1. Available modules list when Jetpack is in development mode.
+1. Available modules list with Jetpack in development mode.
 
 == Changelog ==
 
