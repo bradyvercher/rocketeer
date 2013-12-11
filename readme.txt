@@ -45,4 +45,4 @@ After activating the plugin, look for the new *Modules* submenu item in the Jetp
 == Changelog ==
 
 = 1.0.1 =
-* Intial release to the WordPress.org repo.
+* Initial release in the WordPress.org repo.
