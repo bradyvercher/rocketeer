@@ -28,7 +28,7 @@ Look for the Modules sub-menu under the Jetpack menu item after activating.
 
 * [Write a review](http://wordpress.org/support/view/plugin-reviews/rocketeer#postform)
 * [Have a question?](http://wordpress.org/support/plugin/rocketeer)
-* [Contribute on GitHub](https://github.com/blazersix/rocketeer)
+* [Contribute on GitHub](https://github.com/bradyvercher/rocketeer)
 * [Follow @bradyvercher](https://twitter.com/bradyvercher)
 * [Hire Blazer Six](http://www.blazersix.com/)
 
