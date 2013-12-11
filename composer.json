@@ -1,7 +1,7 @@
 {
 	"name": "bradyvercher/rocketeer",
 	"description": "View, sort and manage Jetpack modules in a standard list table.",
-	"keywords": ["wordpress", "jetpack"]
+	"keywords": ["wordpress", "jetpack"],
 	"type": "wordpress-plugin",
 	"homepage": "https://github.com/bradyvercher/rocketeer",
 	"license": "GPL-2.0+"
