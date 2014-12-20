@@ -119,8 +119,8 @@ class Rocketeer {
 
 		require_once( dirname( __FILE__ ) . '/includes/class-rocketeer-modules-list-table.php' );
 
-		wp_enqueue_style( 'rocketeer', plugin_dir_url( __FILE__ ) . 'assets/styles/rocketeer.css' );
-		wp_enqueue_script( 'rocketeer', plugin_dir_url( __FILE__ ) . 'assets/scripts/rocketeer.js' );
+		wp_enqueue_style( 'rocketeer', plugin_dir_url( __FILE__ ) . 'assets/css/rocketeer.css' );
+		wp_enqueue_script( 'rocketeer', plugin_dir_url( __FILE__ ) . 'assets/js/rocketeer.js' );
 		add_action( 'admin_head', array( $this, 'admin_head' ) );
 	}
 
