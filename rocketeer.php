@@ -121,17 +121,6 @@ class Rocketeer {
 
 		wp_enqueue_style( 'rocketeer', plugin_dir_url( __FILE__ ) . 'assets/css/rocketeer.css' );
 		wp_enqueue_script( 'rocketeer', plugin_dir_url( __FILE__ ) . 'assets/js/rocketeer.js' );
-		add_action( 'admin_head', array( $this, 'admin_head' ) );
-	}
-
-	public function admin_head() {
-		?>
-		<style type="text/css">
-		#icon-jetpack {
-			background-image: url(<?php echo plugin_dir_url( JETPACK__PLUGIN_DIR . 'jetpack.php' ); ?>_inc/images/screen-icon.png);
-		}
-		</style>
-		<?php
 	}
 
 	/**
